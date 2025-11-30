@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>class inhertance</h1>
+        <p id="details"></p>
+        <script>
+            class Cricket{
+                constructor(name){
+                    this.cricketname=name;
+                }
+                present(){
+                    return "my favourite cricketer is " + this.cricketername;
+                }
+            }
+            class Model extends Cricket{
+                constructor(name,age){
+                    super(name);
+                    this.model=mod;
+                }
+                show(){
+                    return this.present()+" and he is "+ this.model;
+                }
+            }
+            let mycricket= new  Model("shubman","26 years old");
+            document.getElementById("details").innerHTML=mycricket.show();
+        </script>
+    </body>
+</html>
